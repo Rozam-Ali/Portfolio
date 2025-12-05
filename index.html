@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rozam Ali - BSCS Student, Web Developer, E-commerce Operations Specialist. Portfolio showcasing web development, e-commerce management, and digital content creation skills.">
+    <title>Rozam Ali | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo text-gradient">Portfolio</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="btn btn-hero btn-sm">Get in Touch</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg class="close-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav hidden" id="mobileNav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact" class="btn btn-hero btn-sm">Get in Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg-1"></div>
+        <div class="hero-bg-2"></div>
+        <div class="hero-bg-blob"></div>
+        
+        <div class="container hero-container">
+            <div class="hero-grid">
+                <!-- Text Content -->
+                <div class="hero-content">
+                    <div class="animate-fade-up">
+                        <p class="hero-subtitle">Welcome to my portfolio</p>
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="text-gradient">Rozam Ali</span>
+                        </h1>
+                        <p class="hero-tagline">BSCS Student | Web Dev Learner | E-commerce Operations</p>
+                    </div>
+                    
+                    <p class="hero-description animate-fade-up delay-200">
+                        Computer Science student running e-commerce operations for UK clients (listings, images, HTML descriptions, pricing, variations). Learning full-stack development and improving design skills. Open to connections in tech and e-commerce.
+                    </p>
+                    
+                    <div class="hero-buttons animate-fade-up delay-300">
+                        <a href="#contact" class="btn btn-hero btn-lg">
+                            Get in Touch
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="assets/Rozam_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-hero-outline btn-lg">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Resume
+                        </a>
+                        <a href="https://www.linkedin.com/in/rozam-ali/" target="_blank" rel="noopener noreferrer" class="btn btn-hero-outline btn-lg">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Image -->
+                <div class="hero-image-wrapper animate-fade-up delay-100">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image-container animate-float">
+                        <img src="assets/Channel.png" alt="Rozam Ali Profile" class="hero-image">
+                        <div class="hero-image-overlay"></div>
+                    </div>
+                    <div class="decorative-square animate-pulse"></div>
+                    <div class="decorative-circle animate-pulse delay-300"></div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator animate-bounce">
+                <span>Scroll</span>
+                <div class="scroll-mouse">
+                    <div class="scroll-dot animate-bounce"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container container-sm">
+            <div class="section-header">
+                <p class="section-subtitle">Get to know me</p>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="glass-card hover-lift about-card">
+                <div class="about-content">
+                    <p>
+                        Hello, I'm <span class="text-highlight">Rozam Ali</span>, a BSCS student focused on web development and digital solutions. I enjoy experimenting with coding, designing websites, and optimizing processes to make technology work smarter.
+                    </p>
+                    <p>
+                        I work on building <span class="text-highlight">Website</span>, managing
+                        <span class="text-highlight"> E-commerce stores</span> and creating <span class="text-highlight">digital content </span>  
+                        like graphics and videos. My approach blends creativity, technical knowledge, and attention 
+                        to detail to produce reliable and engaging results.
+                    </p>
+                    <p>
+                        Passionate about <span class="text-highlight">problem-solving</span> and 
+                        continuous learning, I explore new tools and methods regularly. From <span class="text-highlight">coding challenges</span>
+                        to <span class="text-highlight">digital operations</span>, I aim to deliver 
+                        practical solutions while growing my expertise in tech and online platforms.
+                    </p>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat">
+                        <p class="stat-number text-gradient">3+</p>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat-number text-gradient">5+</p>
+                        <p class="stat-label">Projects Done</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat-number text-gradient">20+</p>
+                        <p class="stat-label">Skills Mastered</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat-number text-gradient">100%</p>
+                        <p class="stat-label">Commitment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-secondary">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">What I bring to the table</p>
+                <h2 class="section-title">Skills & Expertise</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="glass-card hover-lift skill-card">
+                    <div class="skill-icon skill-icon-cyan">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Computer Science & Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">OOP</span>
+                    </div>
+                </div>
+                
+                <div class="glass-card hover-lift skill-card">
+                    <div class="skill-icon skill-icon-orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="13.5" cy="6.5" r=".5"></circle>
+                            <circle cx="17.5" cy="10.5" r=".5"></circle>
+                            <circle cx="8.5" cy="7.5" r=".5"></circle>
+                            <circle cx="6.5" cy="12.5" r=".5"></circle>
+                            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Graphic Design</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">Adobe Photoshop</span>
+                        <span class="skill-tag">Logo Design</span>
+                        <span class="skill-tag">Social Media Graphics</span>
+                        <span class="skill-tag">Thumbnails</span>
+                    </div>
+                </div>
+                
+                <div class="glass-card hover-lift skill-card">
+                    <div class="skill-icon skill-icon-green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">eBay/Amazon Management</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Product Listings</span>
+                        <span class="skill-tag">Inventory Management</span>
+                        <span class="skill-tag">Spreadsheet Automation</span>
+                        <span class="skill-tag">Pricing Optimization</span>
+                    </div>
+                </div>
+                
+                <div class="glass-card hover-lift skill-card">
+                    <div class="skill-icon skill-icon-amber">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"></path>
+                            <path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H6v-2a2 2 0 0 0-4 0Z"></path>
+                            <path d="M4 18v2"></path>
+                            <path d="M20 18v2"></path>
+                            <path d="M12 4v9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Foam & Upholstery Industry</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Custom Quotes</span>
+                        <span class="skill-tag">Master Listings</span>
+                        <span class="skill-tag">Product Specifications</span>
+                        <span class="skill-tag">Client Communication</span>
+                    </div>
+                </div>
+                
+                <div class="glass-card hover-lift skill-card">
+                    <div class="skill-icon skill-icon-indigo">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">SEO & Digital Outreach</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Outreach Campaigns</span>
+                        <span class="skill-tag">Google My Business</span>
+                        <span class="skill-tag">On-Page SEO</span>
+                        <span class="skill-tag">Affiliate Marketing</span>
+                        <span class="skill-tag">Landing Page Optimization</span>
+                    </div>
+                </div>
+                
+                <div class="glass-card hover-lift skill-card">
+                    <div class="skill-icon skill-icon-blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <line x1="10" y1="9" x2="8" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Microsoft Office</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Word</span>
+                        <span class="skill-tag">PowerPoint</span>
+                        <span class="skill-tag">Data Entry</span>
+                        <span class="skill-tag">Report Creation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">What I've been working on</p>
+                <h2 class="section-title">Projects & Work</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="glass-card hover-lift project-card">
+                    <div class="project-header">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="project-icon">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category category-ecommerce">E-Commerce</span>
+                        <h3 class="project-title">eBay Listing Optimization</h3>
+                        <p class="project-description">Optimized product listings with keyword research, compelling descriptions, and strategic pricing to increase visibility and conversions.</p>
+                        <div class="project-skills">
+                            <span>SEO</span>
+                            <span>Copywriting</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card hover-lift project-card">
+                    <div class="project-header">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="project-icon">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category category-ecommerce">E-Commerce</span>
+                        <h3 class="project-title">Amazon Product Management</h3>
+                        <p class="project-description">Managed product uploads, inventory spreadsheets, and listing optimization for multiple product categories.</p>
+                        <div class="project-skills">
+                            <span>Excel</span>
+                            <span>Data Entry</span>
+                            <span>Product Research</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card hover-lift project-card">
+                    <div class="project-header">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="project-icon">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category category-business">Business</span>
+                        <h3 class="project-title">Foam Business Operations</h3>
+                        <p class="project-description">Created custom quotes, master listings, and product specifications for foam and upholstery products.</p>
+                        <div class="project-skills">
+                            <span>Customer Service</span>
+                            <span>Pricing</span>
+                            <span>Documentation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card hover-lift project-card">
+                    <div class="project-header">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="project-icon">
+                            <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category category-content">Content</span>
+                        <h3 class="project-title">TikTok Shop Videos</h3>
+                        <p class="project-description">Produced engaging short-form video content for TikTok Shop products, driving views and sales.</p>
+                        <div class="project-skills">
+                            <span>Video Editing</span>
+                            <span>AI Generation</span>
+                            <span>Content Strategy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card hover-lift project-card">
+                    <div class="project-header">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="project-icon">
+                            <circle cx="13.5" cy="6.5" r=".5"></circle>
+                            <circle cx="17.5" cy="10.5" r=".5"></circle>
+                            <circle cx="8.5" cy="7.5" r=".5"></circle>
+                            <circle cx="6.5" cy="12.5" r=".5"></circle>
+                            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category category-design">Design</span>
+                        <h3 class="project-title">Graphic Design Work</h3>
+                        <p class="project-description">Created logos, social media graphics, thumbnails, and marketing materials for various clients.</p>
+                        <div class="project-skills">
+                            <span>A+ Images</span>
+                            <span>Photoshop</span>
+                            <span>Canva</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card hover-lift project-card">
+                    <div class="project-header">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="project-icon">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category category-development">Development</span>
+                        <h3 class="project-title">Web Development Learning</h3>
+                        <p class="project-description">Building modern responsive websites while learning React, TypeScript, and modern web technologies.</p>
+                        <div class="project-skills">
+                            <span>HTML</span>
+                            <span>JavaScript + React</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-secondary">
+        <div class="container container-sm">
+            <div class="section-header">
+                <p class="section-subtitle">My journey so far</p>
+                <h2 class="section-title">Experience Timeline</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-lift">
+                        <div class="timeline-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <div class="timeline-info">
+                            <span class="timeline-year">2018</span>
+                            <h3 class="timeline-title">Joined the digital Word!</h3>
+                            <p class="timeline-description">Started my journey in computer science, learning programming fundamentals and problem-solving.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-lift">
+                        <div class="timeline-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                            </svg>
+                        </div>
+                        <div class="timeline-info">
+                            <span class="timeline-year">2020</span>
+                            <h3 class="timeline-title">Video Editing Start</h3>
+                            <p class="timeline-description">Began exploring video editing, creating content and learning professional editing software.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-lift">
+                        <div class="timeline-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                        </div>
+                        <div class="timeline-info">
+                            <span class="timeline-year">2022</span>
+                            <h3 class="timeline-title">eBay/Amazon Management</h3>
+                            <p class="timeline-description">Took on e-commerce management roles, optimizing listings and managing product catalogs.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-lift">
+                        <div class="timeline-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                            </svg>
+                        </div>
+                        <div class="timeline-info">
+                            <span class="timeline-year">2023</span>
+                            <h3 class="timeline-title">TikTok Shop Content</h3>
+                            <p class="timeline-description">Started creating video content for TikTok shops, producing engaging product videos.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-lift">
+                        <div class="timeline-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"></path>
+                                <path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H6v-2a2 2 0 0 0-4 0Z"></path>
+                                <path d="M4 18v2"></path>
+                                <path d="M20 18v2"></path>
+                                <path d="M12 4v9"></path>
+                            </svg>
+                        </div>
+                        <div class="timeline-info">
+                            <span class="timeline-year">2024</span>
+                            <h3 class="timeline-title">Foam Business Involvement</h3>
+                            <p class="timeline-description">Joined the foam and upholstery business, handling quotes, listings, and operations.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-lift">
+                        <div class="timeline-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <div class="timeline-info">
+                            <span class="timeline-year">2024</span>
+                            <h3 class="timeline-title">Web Development Learning</h3>
+                            <p class="timeline-description">Deep diving into modern web development with HTML, CSS, React, TypeScript, and frontend technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-lift">
+                        <div class="timeline-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="13.5" cy="6.5" r=".5"></circle>
+                                <circle cx="17.5" cy="10.5" r=".5"></circle>
+                                <circle cx="8.5" cy="7.5" r=".5"></circle>
+                                <circle cx="6.5" cy="12.5" r=".5"></circle>
+                                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="timeline-info">
+                            <span class="timeline-year">2024</span>
+                            <h3 class="timeline-title">Graphics & Content Creation</h3>
+                            <p class="timeline-description">Expanding into comprehensive graphic design and content creation services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container container-sm">
+            <div class="section-header">
+                <p class="section-subtitle">Let's work together</p>
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-description">
+                    I'm always open to discussing new projects, creative ideas, or opportunities 
+                    to be part of your vision. Feel free to reach out through any of these channels.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <a href="mailto:rozamali200@gmail.com" class="glass-card hover-lift contact-card contact-card-red">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>Drop me a message</p>
+                    </div>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/rozam-ali/" target="_blank" rel="noopener noreferrer" class="glass-card hover-lift contact-card contact-card-blue">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>LinkedIn</h3>
+                        <p>Let's connect professionally</p>
+                    </div>
+                </a>
+                
+                <a href="https://www.fiverr.com/rozam_ali" target="_blank" rel="noopener noreferrer" class="glass-card hover-lift contact-card contact-card-green">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Fiverr</h3>
+                        <p>Hire me for freelance work</p>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/Rozam-Ali" target="_blank" rel="noopener noreferrer" class="glass-card hover-lift contact-card contact-card-purple">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>GitHub</h3>
+                        <p>Check out my code</p>
+                    </div>
+                </a>
+                
+                <a href="https://wa.me/+923178513250" target="_blank" rel="noopener noreferrer" class="glass-card hover-lift contact-card contact-card-emerald">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>WhatsApp</h3>
+                        <p>Quick chat</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="glass-card cta-card">
+                <h3>Ready to Start a Project?</h3>
+                <p>Whether you need help with e-commerce, Image content, web development, or anything else I specialize in—I'd love to hear about it.</p>
+                <a href="mailto:rozamali200@gmail.com" class="btn btn-hero btn-xl">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Send Me an Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2024 Edge of Technology. Built with passion and code.</p>
+                <p>Designed & Developed by <span class="text-gradient">Rozam (The Great)</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
